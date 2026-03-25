@@ -1,0 +1,76 @@
+#print all pythagorean triplets whose value are less then or equal to n
+n=5
+for i in range(1,n+1):
+  for j in range(i,n+1 ):
+    for k in range(j,n+1):
+        if(i**2+j**2==k**2):
+          print(i,j,k)
+
+#print the number 1 to 100 and skip number  divisible by  5
+for i in range(1,101):
+  if(i%5==0 ):
+    continue
+  else:
+    print(i)
+
+
+#take 5 number as input ,skip any number that is 0 using continue , and calculate the sum of the remaining numbers
+total=0
+for i in range(1,6):
+  num=int(input("enter the number"))
+  if num==0:
+    continue
+  else:
+    total+=num
+
+print("sum of total number is:",total)
+
+
+#search the specific number in a list of input , and terminate the loop immediately when the number is found 
+spe=2
+num=[1,4,5,8,2,3]
+
+for i,j in enumerate(num):
+  if j==spe:
+    print("value:",j,"index",i)
+  else:
+    continue
+
+#keep taking number from the user and print them untill a negative number appers , then stop the loop
+while True:
+  num=int(input("enterr the number"))
+
+  if num>0:
+    print(num)
+  else:
+    print("negative number got")
+    break
+
+
+#skip all odd numbers and print only the even numbers
+while True:
+  num=int(input("enterr the number"))
+
+  if num%2==0:
+    print(num)
+  else:
+    continue
+
+
+#contionusly add numbers in a loop and stop the loop when sum becomes greater than 100
+total=0
+
+while True:
+  num=int(input("enter the numer"))
+  total+=num
+
+  if total>100:
+    break
+
+
+
+
+
+
+
+
