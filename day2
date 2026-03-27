@@ -1,0 +1,75 @@
+#file handling 
+
+f=open("texty1.txt","r")
+print(f)
+
+print(open("texty1.txt").read())
+
+f=open("texty1.txt","r")
+ramu=f.read()
+print(ramu)
+f.close()
+
+
+f=open("texty1.txt","w")
+ramu=f.write("ho ware you")
+print(ramu)
+f.close()
+
+with open("texty1.txt","w") as f:
+  f.write("hell my dear friend")
+
+f=open("texty1.txt","r")
+ramu=f.read()
+print(ramu)
+f.close()
+
+with open("kumar.txt","x") as f:
+  f.write("new file is creaded")
+
+with open("kumar.txt","r") as f:
+  print(f.read())
+
+
+  s=open("kumar.txt","a")
+s.write("\n sachin")
+s.close()
+
+with open("kumar.txt","r") as f:
+  print(f.read())
+
+
+  s=open("kumar.txt","a")
+s.write("\n sachin")
+s.close()
+
+with open("kumar.txt","r") as f:
+  print(f.read())
+
+f=open("kumar.txt","r")
+count=0
+
+for line in f:
+  count=count+1
+  print(count,line)
+f.close()
+
+
+with open("kumar.txt", "r") as f:
+    for line in f:
+        if line.strip():   # only non-empty lines
+            num = int(line.strip())
+            if num >10 and num<=60:
+                print(num)
+
+
+                
+#class is blueprint of object
+#object is like real thing
+
+s1= student("ravi", 70)
+s2= student("ram", 80)
+
+
+#student is the class
+#ravi and 70 and ram and 80 is the object
