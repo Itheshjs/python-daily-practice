@@ -1,0 +1,64 @@
+total=0
+
+def ticket(noticket,price):
+  totali=noticket*price
+  return totali
+
+result = ticket(5,100)
+print(result)
+
+
+
+def squre(num):
+  return num*num
+print(squre(5))
+
+
+def name(name):
+  print(f"welcome {name}")
+name("kumar")
+
+
+
+
+def largest(a,b,c):
+  if a>b and a>c:
+    print(f"{a} is largest")
+  elif b>a and b>c:
+    print(f"{b} is largest")
+  else:
+    print(f"{c} is largest")
+
+largest(50,40,30)
+
+
+def num(a,b):
+  if a<b:
+    for i in range(a+1,b):
+      print(i)
+  else:
+    for i in range(a-1,b,-1):
+      print(i)
+
+num(10,2)
+
+
+
+def num(n):
+  fact=1
+  for i in range(1, n + 1):
+      fact=fact*i
+  print(fact)
+num(5)
+
+
+def num(n):
+    fact = 1
+    for i in range(1, n + 1):
+        fact = fact * i
+    print(fact)
+
+num(5)
+
+
+
