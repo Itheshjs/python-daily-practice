@@ -1,0 +1,94 @@
+#Numpy(numerical python)
+a=[1,2,3]
+result=[]
+
+for i in a:
+  result.append(i+1)
+print(result)
+
+
+import numpy as np
+a=np.array([1,2,3])
+result=a+1
+print(result)
+
+#nimpy help to fast the mathamatics opration
+
+
+#array creation 
+a=np.array([[1,2,3,4,5],[6,7,8,9,0]]) #1daarray
+print(a)
+
+
+print(np.zeros((3,3)))
+
+print(np.ones((2,2)))
+
+marks=np.array([80,90,75,65,92,92])
+print(np.average(marks))
+#numpy is munerical python
+
+#pandas 
+#It helps you read, clean, analyze, and manipulate data easily
+
+import pandas as pd
+data={
+    "Name":["A","B","C","D","E"],
+    "Age":[20,21,24,23,27],
+    "marks":[85,89,87,98,100],
+    "city":['banglore',"mysuru","Hassan","mandya","tumkuru"]
+}
+
+df=pd.DataFrame(data)
+df
+
+
+
+print(df[df["marks"]>80])
+
+
+#sorting
+#acendig order
+#decending order
+
+print(df.sort_values("marks",ascending=True))
+
+
+df.head()
+#it help to show all the data
+
+
+df.head(3)
+#it show the only the 3 head
+
+
+
+
+df.tail()
+df.tail(3)
+
+df.info()
+#give full information about the dataset
+#coloums 
+#datatyoe
+#Not null
+
+from os import name
+df.describe()
+#show the statics
+#mean
+#std
+#min
+#25%
+#50%
+#75%
+#max
+
+df[["Name","marks"]]
+
+df[["Name","Age","city"]]
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+

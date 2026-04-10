@@ -1,0 +1,79 @@
+def is_prime(num):
+    if num <= 1:
+        return False
+    if num <= 3:
+        return True
+    if num % 2 == 0 or num % 3 == 0:
+        return False
+    i = 5
+    while i * i <= num:
+        if num % i == 0 or num % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+start = int(input("Enter start: "))
+end = int(input("Enter end: "))
+
+for n in range(start, end + 1):
+    if is_prime(n):
+        print(n, end=" ")
+
+
+num=int(input("Enter a number: "))
+reverse=0
+temp=num
+
+while temp>0:
+  digit=temp%10
+  reverse=reverse*10+digit
+  temp=temp//10
+print(reverse)
+
+
+
+# Input from user
+num = int(input("Enter a number: "))
+
+rev = 0  # This will store the reversed number
+temp = num  # Temporary variable to keep original number intact
+
+# Loop until number becomes 0
+while temp > 0:
+    digit = temp % 10        # Extract the last digit
+    rev = rev * 10 + digit   # Append digit to the reversed number
+    temp = temp // 10        # Remove the last digit
+
+print("Reversed number is:", rev)
+
+
+start = int(input("Enter start: "))
+end = int(input("Enter end: "))
+
+for num in range(start, end + 1):
+
+    if num <= 1:
+        print(num, "-> Not Prime")
+    else:
+        for i in range(2, num):
+            if num % i == 0:
+                print(num, "-> Not Prime")
+                break
+        else:
+            print(num, "-> Prime")
+
+
+
+start=int(input("Enter start: "))
+end=int(input("Enter end: "))
+
+for num in range(start, end+1):
+  if num<=1:
+    print(num,"=> not a prime number")
+  else:
+    for i in range(2,num):
+      if num%i==0:
+        print(num,"=> not a prime number")
+        break
+    else:
+        print(num,"=>prime number")
