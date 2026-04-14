@@ -1,0 +1,97 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+df=pd.read_csv("train.csv")
+df
+
+
+numeric_df = df.select_dtypes(include=['number'])
+
+sns.heatmap(numeric_df.corr(), annot=True, cmap="coolwarm")
+plt.show()
+
+
+
+df.head()
+df.tail()
+
+#sample rows
+df.sample()
+
+
+
+df.shape
+#it tell how many rows and columns are there
+#df.shape can use any kind of dataset big small no matter it work for everything  easly can use to cheak how much rows and coloumns are present
+df.columns
+df.info() #if want to find the datatypes we can easly find like df.info()
+
+df.describe() #describe is used to find the mean ,median ,mod st etc
+
+
+df.isnull().sum()
+plt.figure(figsize=(8,4))
+sns.heatmap(df.isnull(),cbar=False)
+plt.title("Missing Values Heatmap")
+plt.show()
+
+
+df.drop(columns=['Cabin'],inplace=True)
+
+
+df['Age'].fillna(df['Age'].median,inplace=True)
+
+
+df.isnull().sum()
+
+df['Embarked'].fillna(df['Embarked'].mode()[0],inplace=True)
+
+
+df.isnull().sum()
+
+
+#Univariate Analysis
+sns.countplot(x='Survived',hue='Survived',data=df)
+plt.title("Survived Count")
+plt.show()
+
+
+
+sns.countplot(x='Fare',hue='Fare',data=df)
+plt.title("Fare count")
+plt.show()
+
+
+sns.countplot(x='SibSp',data=df)
+plt.title("SibSp count")
+plt.show()
+
+
+sns.countplot(x='PassengerId',data=df)
+plt.title("SibSp count")
+plt.show()
+
+
+plt.figure(figsize=(8,4))
+
+df['Age'] = pd.to_numeric(df['Age'], errors='coerce')
+
+sns.histplot(df['Age'].dropna(), kde=True)
+
+plt.title("Age Distribution")
+plt.show()
+
+
+#Bivariate Analysis
+sns.countplot(x='Survived',hue='Sex',data=df)
+plt.title("survived")
+plt.show()
+
+#hue : is used to allocate the diffrent color .if not used hue the it allocate same color to both
+
+
+sns.countplot(x='Survived',hue='Age',data=df)
+plt.title("survived")
+plt.show()
