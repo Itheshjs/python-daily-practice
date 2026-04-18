@@ -1,0 +1,104 @@
+#Encapsulation : Wrapping  data(variable) + method (function) into single unit 
+#and restricting direct acceass to the data
+
+#you don't directly touch internal data - you use the controlled method 
+
+
+class Student:
+  def __init__(self):
+    self.__marks=0
+
+  def set_marks(self,mark):
+    if mark>0:
+      self.__marks=mark
+
+  def get_marks(self):
+    return self.__marks
+
+  
+s=Student()
+s.set_marks(90)
+print(s.get_marks())
+
+
+Encapsulation is the process of binding the data and method together into single unit
+
+-encapsulation is the piller of oops
+
+
+what is inheritence Inheritence: one class is using the properties and method of other class
+
+child class get everything from parent class
+👨‍👩‍👦 Family Father has: property habits Child: inherits these can also add new things
+
+✅ Same idea in programming
+
+
+
+class parent:
+  def house(self):
+    print("Parent as house")
+
+class child(parent):
+  def bike(self):
+    print("child has bike")
+
+c=child()
+c.house()
+c.bike()
+
+
+class user:
+  def __init__(self,name,id,age,passcode):
+    self.name=name
+    self.id=id
+    self.age=age
+    self.passcode=passcode
+  def login(self):
+    print("logged in ")
+  def logout(self):
+    print("logged out")
+
+
+
+class Student(user):
+  def __init__(self,marks,rollnumber,name,id,age,passcode):
+    self.marks=marks
+    self.rollnumber=rollnumber
+    self.name=name
+    self.id=id
+    self.age=age
+    self.passcode=passcode
+  def login(self):
+    print("Student Logging in")
+
+
+
+
+s1=Student(90,123,"rajesh",1,23,"0000")
+s1
+
+s1=Student()
+s1.login()
+
+s1.logout()
+
+
+
+#we inherit
+#  ->non private attribute
+#  -> non private method
+# constructor[other magic method]
+
+
+#if respond get from child then it give fist preference to the  chiold and if not foud oin that go for the parent and find and repond to the  user   
+#if parent also not have then it throw out the error
+
+
+#from child to parent contact using 
+#super keyword
+
+
+#example of use 
+#super.login() like this can aceass parent property
+
