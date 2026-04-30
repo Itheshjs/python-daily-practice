@@ -1,0 +1,47 @@
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+from sklearn import metrics
+
+
+data = {
+    'Age': [25, 30, 45, 35, 22],
+    'Salary': [50000, 60000, 80000, 120000, 20000],
+    'Buy': ['No', 'Yes', 'Yes', 'Yes', 'No']
+}
+
+df = pd.DataFrame(data)
+
+df['Buy'] = df['Buy'].map({'No': 0, 'Yes': 1})
+
+
+X = df[['Age', 'Salary']]
+y = df['Buy']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+
+
+model = DecisionTreeClassifier()
+model.fit(X_train, y_train)
+
+
+y_pred = model.predict(X_test)
+
+
+print("Accuracy:", metrics.accuracy_score(y_test, y_pred))
+
+
+
+from sklearn import tree
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10,6))
+tree.plot_tree(model, feature_names=['Age','Salary'], class_names=['No','Yes'], filled=True)
+plt.show()
+
+DecisionTreeClassifier(max_depth=3)
+
+
+model = DecisionTreeClassifier()
+model.fit(X_train, y_train)
+y_pred = model.predict(X_test)

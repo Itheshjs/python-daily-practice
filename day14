@@ -1,0 +1,112 @@
+🔹 1. Variables & Data Types
+Python stores data in variables.
+x = 10          # integername = "Ithesh" # stringpi = 3.14       # floatis_ok = True    # boolean
+👉 No need to declare type explicitly (Python is dynamically typed)
+
+🔹 2. Input & Output
+name = input("Enter your name: ")print("Hello", name)
+👉 input() always gives string → convert if needed:
+age = int(input("Enter age: "))
+
+🔹 3. Operators
+
+
+Arithmetic: + - * / // %
+
+
+Comparison: == != > <
+
+
+Logical: and or not
+
+
+a = 5b = 2print(a + b)   # 7print(a > b)   # True
+
+🔹 4. Conditional Statements (Decision Making)
+age = 18if age >= 18:    print("Adult")else:    print("Minor")
+👉 Multiple conditions:
+if age > 18:    print("Adult")elif age == 18:    print("Just Adult")else:    print("Minor")
+
+🔹 5. Loops
+For Loop
+for i in range(5):    print(i)
+While Loop
+i = 0while i < 5:    print(i)    i += 1
+
+🔹 6. Lists (Very Important)
+nums = [1, 2, 3, 4]print(nums[0])   # 1nums.append(5)
+👉 Loop through list:
+for n in nums:    print(n)
+
+🔹 7. Dictionaries (Key-Value)
+student = {    "name": "Ithesh",    "age": 21}print(student["name"])
+
+🔹 8. Functions
+def greet(name):    return "Hello " + nameprint(greet("Ithesh"))
+👉 Functions help reuse code
+
+🔹 9. Strings
+text = "python"print(text.upper())print(text[0])   # p
+
+🔹 10. Basic Error Handling
+try:    x = int(input("Enter number: "))except:    print("Invalid input")
+
+🔹 11. Modules & Libraries
+import mathprint(math.sqrt(16))
+👉 Python has many powerful libraries (very important later)
+
+🔹 12. File Handling
+file = open("test.txt", "w")file.write("Hello")file.close()
+
+🔹 13. OOP Basics (Later Stage)
+class Student:    def __init__(self, name):        self.name = names1 = Student("Ithesh")print(s1.name)
+
+🔥 Important Tips for Beginners
+
+
+Practice daily (very important)
+
+
+Focus on logic, not syntax
+
+
+Solve problems (start easy → medium)
+
+
+Debug your own code
+
+
+
+🚀 What to do next?
+Since you are a CSE student, best path is:
+
+
+Learn basics (above)
+
+
+Practice problems (loops, arrays)
+
+
+Learn:
+
+
+Data Structures
+
+
+OOP
+
+
+File handling
+
+
+
+
+Start mini projects
+
+
+
+If you want, I can give:
+✅ Python beginner → advanced roadmap
+✅ Practice questions with solutions
+✅ Mini projects for your resume
+Just tell 👍
