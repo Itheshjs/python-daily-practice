@@ -1,0 +1,260 @@
+Output Format - MCQ
+What does the following code achieve?
+
+print(8)
+print(13, end=" ")
+print(21)
+
+ans:Prints one number on the first line, two numbers on the next line
+
+Role of endl
+What is the role of "\n" in the below code?
+
+
+print(7, "\n", 5)
+
+Subtraction
+Addition
+Division
+None of the above
+
+Print Python Programming
+To print "Python" and "Programming" on the same line with a space in between, you would write:
+
+print("Python", "Programming")
+
+
+Print Many Literals - MCQ
+What will be the output of the following code snippet?
+
+print("Hello", "World", 5, "Python",2)
+
+Hello World 5 endl 2
+
+
+
+
+What will the following Python code output?
+
+
+print("Hello")
+print(" World!")
+
+Correct Answer:
+
+None of the above
+Explanation:
+print() statement by defaults prints from a new line and marks its termination with a new line character
+Actual Output:
+Hello
+_World!
+
+( _ : denotes empty space)
+
+
+
+How do you print the numbers 1 to 5 on the same line with spaces?
+print(1,2,3,4,5)
+print("1 2 3 4 5")
+Both A and B
+
+
+Print I love CodeChef
+Print each word of the below-given sentence on a new line.
+
+I love CodeChef
+
+# cook your dish here
+print("I")
+print("love")
+print("CodeChef")
+
+
+****
+****
+****
+****
+
+#printing above structure we can use two loop one for row and another one for column 
+#in first iteration it fo through first row then it started to print  according to 2nd loop for columns are given 
+# in first iteration it first print 4 stars then it move to next line and again print 4 stars and this process is repeated until the last row is printed    
+for i in range(4): # for row
+    for j in range(4): # for column
+        print("*", end="") # print star and stay on the same line
+    print() # move to the next line after printing 4 stars
+
+
+
+
+#printing right anfle triangle 
+
+#it also same i for row and j for columns 
+
+in first iteration i row i firts print 1 start becouse in j it take range according to i if i is  1 thenrange 0 to 1 but in this 1 exclude and print ("*") then it move to next line and in second iteration i is 2 then it print 2 stars and this process is repeated until the last row is printed
+#2nd also same it take range (2):
+
+#if it is 2 then it ptint 2 star 0 for 1 star and 1 for 2 star but in this 2 is exclude and print ("*") then it move to next line and in third iteration i is 3 then it print 3 stars and this process is repeated until the last row is printed
+
+
+
+
+n=5
+for i in range(1,n+1):
+  print(" " * (n-1),end="")
+  for j in range(i):
+    print("*",end="")
+  print()
+
+
+#above code is for printing the Pyramid Pattern 
+#first line for how many rows are needed 
+
+#second line for space printing btw the  left side of the pyramid have space like 4,3,2,1,0 
+#so for each row it take space like n-1 means 5-1=4 for first row and 5-2=3 for second row and this process is repeated until the last row is printed
+
+
+#then the printing the star we need j for coloum 
+
+
+
+# n=5
+# for i in range(1,n+1):
+#   print(" " *(n-i),end="")
+#   for j in range(i):
+#     print("* " , end="")
+#   print()
+
+
+#this is code which help to print pyramid traingle 
+#in 1st line first 5 rows are defined 
+
+
+
+
+#5) number triangle very important in this also we take same row and coloumns
+
+#for i in range(1)
+
+
+
+#Number Triangle is also good
+# for i in range(1, 6):
+#     for j in range(1, i+1):
+#         print(j, end=" ")
+#     print()
+
+
+#in this number triangle first taken  5 rows
+#then we take range for printing coloumn
+#if i is 1 then i+1 become 2 then 1 to 2 in this 2 is exclude so i ptint 1 only 
+#in next line 1 to 3 i first print 1 and 2 number number 3 excluded 
+#same continuue
+
+
+
+#Floyd's Triangle 
+
+
+# num = 1
+# for i in range(1, 5):
+#     for j in range(i):
+#         print(num, end=" ")
+#         num += 1
+#     print()
+
+
+
+#most important thing Floydes number triangle
+# 🔹 Step-by-Step Execution (Backend Thinking)
+# 👉 Initial State
+# num = 1
+# 🔸 1st Iteration (i = 1)
+# for j in range(1) → j = 0
+# print(num) → print(1)
+# num = 2
+
+# Output so far:
+
+# 1
+# 🔸 2nd Iteration (i = 2)
+# for j in range(2) → j = 0, 1
+# j = 0 → print(2) → num = 3
+# j = 1 → print(3) → num = 4
+
+# Output:
+
+# 2 3
+# 🔸 3rd Iteration (i = 3)
+# for j in range(3) → j = 0, 1, 2
+# j = 0 → print(4) → num = 5
+# j = 1 → print(5) → num = 6
+# j = 2 → print(6) → num = 7
+
+# Output:
+
+# 4 5 6
+# 🔸 4th Iteration (i = 4)
+# for j in range(4) → j = 0, 1, 2, 3
+# j = 0 → print(7) → num = 8
+# j = 1 → print(8) → num = 9
+# j = 2 → print(9) → num = 10
+# j = 3 → print(10) → num = 11
+
+# Output:
+
+# 7 8 9 10
+# 🔹 Final Output
+# 1
+# 2 3
+# 4 5 6
+# 7 8 9 10
+# 🔹 How to Think (Important Trick)
+# Row number = how many elements to print
+# Keep one variable (num) increasing continuously
+# 🔹 Super Simple Visualization
+# Row (i)	Numbers Printed	num after row
+# 1	1	2
+# 2	2 3	4
+# 3	4 5 6	7
+# 4	7 8 9 10	11 
+
+
+#Hollow squre 
+# in this Hollow squre first we set the frame for example i and j is 4  0 to 3 4*4
+
+
+
+#designing  home design by printing stars and space and also we can use if else condition for printing the stars and space according to the design like i> < by using if else condition we can print the stars and space according to the design and also we can use for loop for row and coloumns for printing the design  
+# n=10
+# for i in range(1,n+1):
+#   print(" " * (n-i) , end="")
+
+#   for j in range(1,i+1):
+#     if j == 1 or j == i or i == n:
+#       print("* " , end="")
+#     else:
+#       print("  " , end="")
+#   print()
+
+# for i in range(1, n):
+#     for j in range(1, n+1):
+#         if j == 1 or j == n or i == n-1:
+#             print("* ", end="")
+
+#         elif i >= 2 and i <= 3 and j >= 3 and j <= 4:
+#             print("* ", end="")
+        
+#         elif i >= 2 and i <= 3 and j >= 7 and j <= 8:
+#             print("* ", end="")
+            
+#         elif j==4 and i>=7 :
+#             print("* ",end="")
+#         elif j==6 and i>=7:
+#             print("* ",end="")
+#         elif i==6 and j>=4 and j<=6:
+#             print("* ",end="")
+#         else:
+#             print("  ", end="")
+#     print()
+
+
