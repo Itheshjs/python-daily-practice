@@ -1,0 +1,94 @@
+🧠 Python Beginner Tasks
+🔹 Task 1: Print Your Details
+
+👉 Print your name, age, and branch using variables.
+
+🔹 Task 2: Basic Calculator
+
+👉 Take two numbers and print:
+
+Addition
+Subtraction
+Multiplication
+Division
+🔹 Task 3: Even or Odd
+
+👉 Take a number from user and check:
+
+Even
+Odd
+🔹 Task 4: Largest of 3 Numbers
+
+👉 Input 3 numbers and print the largest.
+
+🔹 Task 5: Sum of Numbers
+
+👉 Find sum from 1 to N (user input)
+
+Example:
+N = 5 → Output = 15
+
+🔹 Task 6: Multiplication Table
+
+👉 Print table of a number (like 5)
+
+Example:
+
+5 x 1 = 5  
+5 x 2 = 10  
+...
+🔹 Task 7: Count Vowels
+
+👉 Input a string and count vowels (a e i o u)
+
+🔹 Task 8: Reverse a String
+
+👉 Input: "hello"
+👉 Output: "olleh"
+
+🔹 Task 9: Factorial
+
+👉 Find factorial of a number
+
+Example:
+5 → 5 × 4 × 3 × 2 × 1 = 120
+
+🔹 Task 10: Simple Login System
+
+👉 Create a program:
+
+Username = "admin"
+Password = "1234"
+👉 Check input and print:
+"Login Success"
+"Invalid Login"
+🚀 Mini Challenge Tasks
+🔹 Task 11: Star Pattern
+*
+**
+***
+****
+🔹 Task 12: Palindrome Check
+
+👉 Input: "madam"
+👉 Output: Palindrome
+
+🔹 Task 13: List Operations
+
+👉 Create a list and:
+
+Add item
+Remove item
+Print length
+🔹 Task 14: Count Even Numbers in List
+
+👉 Example:
+
+[1,2,3,4,5,6]
+Output → 3
+🔹 Task 15: Simple Function
+
+👉 Create a function that:
+
+Takes a number
+Returns square
