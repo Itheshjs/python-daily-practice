@@ -1,0 +1,151 @@
+🧠 Python Beginner Assessment (with Answers)
+🔹 Section 1: Multiple Choice Questions
+1. What is the correct file extension for Python files?
+
+A) .pyth
+B) .pt
+C) .py ✅
+D) .p
+
+Answer: .py
+
+2. Which data type is used to store True or False?
+
+A) int
+B) str
+C) bool ✅
+D) float
+
+Answer: bool
+
+3. What is the output of this code?
+print(2 + 3 * 4)
+
+A) 20
+B) 14 ✅
+C) 24
+D) 9
+
+Answer: 14 (Multiplication happens first)
+
+4. Which keyword is used to define a function?
+
+A) func
+B) define
+C) def ✅
+D) function
+
+Answer: def
+
+5. What will this print?
+x = "5"
+y = 2
+print(x * y)
+
+A) 10
+B) 52
+C) 55 ✅
+D) Error
+
+Answer: "55" (String repetition)
+
+🔹 Section 2: Fill in the Blanks
+6. Python is a ______ language.
+
+Answer: interpreted
+
+7. The function used to display output is ______.
+
+Answer: print()
+
+8. Lists are written using ______ brackets.
+
+Answer: square [ ]
+
+9. A loop that runs while a condition is true is called a ______ loop.
+
+Answer: while
+
+10. The keyword used to stop a loop is ______.
+
+Answer: break
+
+🔹 Section 3: True or False
+11. Python is case-sensitive.
+
+Answer: True ✅
+
+12. Tuples are mutable.
+
+Answer: False ❌ (Tuples are immutable)
+
+13. len() function is used to find length.
+
+Answer: True ✅
+
+14. Indentation is not important in Python.
+
+Answer: False ❌ (Indentation is very important)
+
+15. input() always returns a string.
+
+Answer: True ✅
+
+🔹 Section 4: Short Answer Questions
+16. What is a variable?
+
+Answer:
+A variable is a container used to store data values.
+Example:
+
+x = 10
+17. Difference between list and tuple?
+
+Answer:
+
+List → mutable (can change)
+Tuple → immutable (cannot change)
+18. What is a loop?
+
+Answer:
+A loop is used to repeat a block of code multiple times.
+
+19. What is a function?
+
+Answer:
+A function is a reusable block of code that performs a specific task.
+
+20. What is indentation?
+
+Answer:
+Indentation is the space before code that defines blocks in Python.
+
+🔹 Section 5: Coding Questions
+21. Print numbers from 1 to 5
+for i in range(1, 6):
+    print(i)
+22. Check if number is even or odd
+num = 4
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+23. Find sum of first 5 numbers
+sum = 0
+for i in range(1, 6):
+    sum += i
+
+print(sum)
+24. Function to add two numbers
+def add(a, b):
+    return a + b
+
+print(add(2, 3))
+25. Reverse a string
+text = "python"
+print(text[::-1])
+🎯 Bonus Challenge
+26. Write a program to print a star pattern
+for i in range(1, 6):
+    print("*" * i)
