@@ -1,0 +1,197 @@
+No, that line is not valid in Python.
+
+In Python, boolean values are case-sensitive and must be written as:
+
+True
+False
+
+So the correct version would be:
+
+is_admin = True
+Why TRUE is invalid:
+TRUE (all caps) is not a predefined keyword in Python.
+Python will treat TRUE as a variable name, not a boolean.
+If TRUE hasn’t been defined earlier, it will raise a NameError.
+
+
+
+
+Scenario based question
+A developer wrote this line: is_admin = TRUE.
+
+Is this valid in Python?
+
+Why or why not? ?
+
+No, that line is not valid in Python.
+
+In Python, boolean values are case-sensitive and must be written as:
+
+True
+
+False
+
+So the correct version would be:
+
+is_admin = True
+Why TRUE is invalid:
+TRUE (all caps) is not a predefined keyword in Python.
+
+Python will treat TRUE as a variable name, not a boolean.
+
+If TRUE hasn’t been defined earlier, it will raise a NameError.
+
+Example:
+is_admin = TRUE
+This will result in:
+
+NameError: name 'TRUE' is not defined
+Key point:
+Python is case-sensitive, and its boolean literals are strictly True and False.
+
+
+like above give more question and ans
+
+Here are several similar scenario-based Python questions with answers to help you practice 👇
+
+1. Scenario
+A developer writes:
+
+x = null
+Is this valid in Python? Why or why not?
+
+Answer:
+❌ Not valid.
+Python uses None, not null.
+
+✔ Correct:
+
+x = None
+2. Scenario
+A developer writes:
+
+if x = 5:
+    print("Hello")
+Is this valid in Python? Why or why not?
+
+Answer:
+❌ Not valid.
+= is assignment, not comparison.
+
+✔ Correct:
+
+if x == 5:
+    print("Hello")
+3. Scenario
+A developer writes:
+
+print "Hello"
+Is this valid in Python? Why or why not?
+
+Answer:
+❌ Not valid in modern Python.
+In Python 3, print is a function.
+
+✔ Correct:
+
+print("Hello")
+4. Scenario
+A developer writes:
+
+my-list = [1, 2, 3]
+Is this valid in Python? Why or why not?
+
+Answer:
+❌ Not valid.
+Variable names cannot contain - (hyphen).
+
+✔ Correct:
+
+my_list = [1, 2, 3]
+5. Scenario
+A developer writes:
+
+def = 10
+Is this valid in Python? Why or why not?
+
+Answer:
+❌ Not valid.
+def is a reserved keyword used to define functions.
+
+6. Scenario
+A developer writes:
+
+for i in range(5)
+    print(i)
+Is this valid in Python? Why or why not?
+
+Answer:
+❌ Not valid.
+Missing colon : after the loop.
+
+✔ Correct:
+
+for i in range(5):
+    print(i)
+7. Scenario
+A developer writes:
+
+x = 10
+if x > 5:
+print("Big")
+Is this valid in Python? Why or why not?
+
+Answer:
+❌ Not valid.
+Python requires proper indentation.
+
+✔ Correct:
+
+x = 10
+if x > 5:
+    print("Big")
+8. Scenario
+A developer writes:
+
+True = 5
+Is this valid in Python? Why or why not?
+
+Answer:
+❌ Not valid.
+True is a keyword and cannot be reassigned.
+
+9. Scenario
+A developer writes:
+
+name = "John
+Is this valid in Python? Why or why not?
+
+Answer:
+❌ Not valid.
+String is not properly closed with a quote.
+
+✔ Correct:
+
+name = "John"
+10. Scenario
+A developer writes:
+
+x = int("10.5")
+Is this valid in Python? Why or why not?
+
+Answer:
+❌ Not valid.
+"10.5" is a float string, not an integer.
+
+✔ Correct:
+
+x = int(float("10.5"))
+If you want, I can also:
+
+Turn these into MCQs
+
+Give tricky interview questions
+
+Or create a mini test with answers hidden
+
+
